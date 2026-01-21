@@ -14,3 +14,14 @@ p{
     p strong{
         color: #00ff00;
 }
+#logo{
+    width: 200px;
+}
+#banner-principal{
+    width: 100%;
+}
+.banner{
+    width: 250px;
+    height: 250px;
+    border-radius: 40%;
+}
