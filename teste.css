@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(50deg, rgb(88, 28, 90), rgb(179, 106, 185));
+}
+div{
+background-color: rgb(155, 82, 184);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 70px;
+border-radius: 30px;
+color: rgb(61, 34, 138);
+
+}
+input{
+    padding: 2px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    
+}
+button{
+    background-color: rgb(175, 169, 255);
+    border-radius: 55px ;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    color: rgb(16, 0, 24);
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(74, 198, 255);
+    cursor: pointer;
+}
+.pompom{
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 180px;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login{
+    margin: top;
+    text-align: center;
+    font-size: 14px;
+}
+.login a{
+    color: rgb(65, 82, 231);
+    text-decoration: none ;
+    font-weight: bold ;
+}
+.login a:hover{
+    text-decoration: underline;
+}

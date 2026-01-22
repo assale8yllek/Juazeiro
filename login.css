@@ -1,0 +1,38 @@
+body{
+   background-image: linear-gradient(50deg, rgb(95, 35, 134), rgb(122, 45, 194));
+}
+div{
+background-color: rgb(155, 82, 184);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 70px;
+border-radius: 30px;
+color: rgb(61, 34, 138);
+}
+input{
+    padding: 3px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    
+}
+button{
+    background-color: rgb(88, 79, 218);
+    border-radius: 55px ;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    color: rgb(32, 2, 48);
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(112, 71, 136);
+    cursor: pointer;
+}
+.san.rio.jpg{
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100px;
+}
