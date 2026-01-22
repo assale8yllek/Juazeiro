@@ -4,8 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body{
+    background-image: linear-gradient(45deg, rgb(128, 26, 26), rgb(172, 74, 74));
+    .centro{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 30px;
+
+    }
+}
+.test{
+display: flex;
+padding: 40px;
+text-align: center;
+border-radius: column;
+gap: 20px;
+
+}
+.test img{
+    width: 100%;
+    max-width: 200%;
+    height: auto;
+    display: block;
+
+}
+@media (max-width: 600px){
+    .centro{
+        flex-direction: column;
+    }
+}
+.contanier{
+    background-color: rgb(187, 68, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+   flex-direction: column;
+}
+.menu a{
+    text-decoration: none;
+    padding: 20px;
+    color: wheat;
+    text-align: end;
+ 
+}
+.menu img{
+    width: 200px;
+    height: auto;
+
+}
+
+.links{
+margin-left: auto ;
+display: flex;
+}
+
+
+/* ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    flex: 1;
+    text-align: center;
+}
+)*/
+    </style>
+
 </head>
+
 <body>
-    
+    <nav class="menu">
+<img src="OIP.webp" alt="">
+
+    <div class="links">
+        <a href="$">Inicio</a>
+        <a href="$">Fotos</a>
+        <a href="$">Notícias</a>
+        <a href="https://youtu.be/pok8H_KF1FA?si=pUjmkshlgY9MI2zB">Contato</a>
+        <a href="https://youtu.be/kdjQgO3Fy-o?si=kXx6YJYWvoMMio8t">Vídeos</a>
+        </div>
+    </nav>
+
+
+<div class="contanier" >
+
+<div class="centro">
+
+<div class="teste">
+<img src="tumblr.jpg" alt="">
+<p>Moranguinho <a href="">
+ </div>
+
+    <div class="teste">
+        <img src="a.webp" alt="">
+        <p>Laranjinha<a href="">
+    </div>
+
+    <div class="teste">
+        <img src="pukka.webp" alt="">
+        <p>Pukka<a href=""></p>
+    </div>
+
 </body>
 </html>
