@@ -49,3 +49,32 @@ header{
     text-align: center;
     align-items: center;
 }
+#video{
+    background: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-bottom: 3px solid orange;
+
+}
+#video > .contanier > img {
+height: 315px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
+.menu> ul> li> a:link{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+.menu> ul> li> a:hover{
+    border-bottom: 2px solid green;
+}
+.menu> ul> li> a:hover{
+    color: green;
+    border-bottom: 2px solid green;
+    font-weight: 700;
+}
