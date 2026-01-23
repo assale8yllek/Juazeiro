@@ -1,41 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Corpo Docente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-
-        #pai {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            width: 100%;
-            background-color: blue;
-            padding: 10px 5px 10px 5px;
-            border: 2px solid black;
-            text-align: left;
+        /* --- ESTILOS GERAIS --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
         }
-        .filho{
-            background: gray;
-            width: 80px;
-            height: 60px;
+
+        /* Cabeçalho com o Azul Marinho que você gosta */
+        header {
+            background-color: #005b96; /* Azul Marinho */
+            color: white;
+            padding: 2rem;
             text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- SEÇÕES POR ÁREA --- */
+        .area-section {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .area-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid;
+            display: inline-block;
+        }
+
+        /* Cores específicas para cada área (Roxo, Verde, Azul) */
+        .humanas h2 { color: #9b59b6; border-color: #9b59b6; } /* Roxo Suave */
+        .linguagens h2 { color: #e67e22; border-color: #e67e22; } /* Laranja */
+        .matematica h2 { color: #2980b9; border-color: #2980b9; } /* Azul */
+        .natureza h2 { color: #27ae60; border-color: #27ae60; } /* Verde */
+
+        /* --- GRID DE PROFESSORES --- */
+        .professores-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* --- CARTÃO DO PROFESSOR --- */
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            width: 250px;
+            text-align: center;
+            padding: 25px 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Foto do Perfil */
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Deixa a foto redonda */
+            object-fit: cover;
+            border: 4px solid #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+
+        .card span {
+            display: block;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* --- REDES SOCIAIS (Abaixo da foto) --- */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 1.5rem; /* Tamanho dos ícones */
+            transition: color 0.3s;
+        }
+
+        /* Cores oficiais das redes */
+        .fa-instagram { color: #C13584; }
+        .fa-linkedin { color: #0077B5; }
+        .fa-facebook { color: #1877F2; }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
     </style>
-
 </head>
-
 <body>
 
-    <div id="pai">
-        <div class="filho emlinha">Conteúdo 1</div>
-        <div class="filho emlinha">Conteúdo 2</div>
-        <div class="filho emlinha">Conteúdo 3</div>
-        <div class="filho emlinha">Conteúdo 4</div>
-        <div class="filho emlinha">Conteúdo 5</div>
-    </div>
+    <header>
+        <h1>Nossa Equipe Docente</h1>
+        <p>Conheça os especialistas dedicados ao seu aprendizado</p>
+    </header>
+
+    <main>
+        
+        <section class="area-section humanas">
+            <h2 class="area-title">Ciências Humanas</h2>
+            <div class="professores-grid">
+                
+                <div class="card">
+                    <img src="carmen.webp" alt="Professora Carmen">
+                    <h3>Prof. Carmen Lúcia </h3>
+                    <span>História</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="Professor Júlio">
+                    <h3>Prof. Júlio</h3>
+                    <span>Geografia</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="area-section linguagens">
+            <h2 class="area-title">Linguagens e Códigos</h2>
+            <div class="professores-grid">
+                
+                <div class="card">
+                    <img src="https://placehold.co/150x150/e67e22/white?text=Foto" alt="Professora Ana Cládia">
+                    <h3>Prof. Ana Cládia Catão</h3>
+                    <span>Português / Literatura</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/150x150/e67e22/white?text=Foto" alt="Professora Juliana">
+                    <h3>Prof. Juliana </h3>
+                    <span>Inglês</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="area-section matematica">
+            <h2 class="area-title">Matemática</h2>
+            <div class="professores-grid">
+                
+                <div class="card">
+                    <img src="https://placehold.co/150x150/2980b9/white?text=Foto" alt="Professora Nathália">
+                    <h3>Prof. Nathália Barros</h3>
+                    <span>Matemática A</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="area-section natureza">
+            <h2 class="area-title">Ciências da Natureza</h2>
+            <div class="professores-grid">
+                
+                <div class="card">
+                    <img src="https://placehold.co/150x150/27ae60/white?text=Foto" alt="Professora Natália">
+                    <h3>Prof. Natália</h3>
+                    <span>Biologia</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="rick.webp" alt="Professor Rafael">
+                    <h3>Prof. Rafael </h3>
+                    <span>Física</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
 
 </body>
-
 </html>
