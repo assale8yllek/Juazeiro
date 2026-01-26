@@ -41,7 +41,6 @@
             padding: 20px;
         }
 
-        /* --- SEÇÕES POR ÁREA --- */
         .area-section {
             margin-bottom: 40px;
             background: white;
@@ -58,13 +57,11 @@
             display: inline-block;
         }
 
-        /* Cores específicas para cada área (Roxo, Verde, Azul) */
-        .humanas h2 { color: #9b59b6; border-color: #9b59b6; } /* Roxo Suave */
-        .linguagens h2 { color: #e67e22; border-color: #e67e22; } /* Laranja */
-        .matematica h2 { color: #2980b9; border-color: #2980b9; } /* Azul */
-        .natureza h2 { color: #27ae60; border-color: #27ae60; } /* Verde */
+        .humanas h2 { color: #9b59b6; border-color: #9b59b6; } 
+        .linguagens h2 { color: #e67e22; border-color: #e67e22; } 
+        .matematica h2 { color: #2980b9; border-color: #2980b9; }
+        .natureza h2 { color: #27ae60; border-color: #27ae60; } 
 
-        /* --- GRID DE PROFESSORES --- */
         .professores-grid {
             display: flex;
             flex-wrap: wrap;
@@ -72,7 +69,6 @@
             justify-content: center;
         }
 
-        /* --- CARTÃO DO PROFESSOR --- */
         .card {
             background: #fff;
             border: 1px solid #e0e0e0;
@@ -88,11 +84,10 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        /* Foto do Perfil */
         .card img {
             width: 120px;
             height: 120px;
-            border-radius: 50%; /* Deixa a foto redonda */
+            border-radius: 50%; 
             object-fit: cover;
             border: 4px solid #f0f0f0;
             margin-bottom: 15px;
@@ -111,7 +106,6 @@
             font-weight: 500;
         }
 
-        /* --- REDES SOCIAIS (Abaixo da foto) --- */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -120,11 +114,10 @@
 
         .social-icons a {
             text-decoration: none;
-            font-size: 1.5rem; /* Tamanho dos ícones */
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
 
-        /* Cores oficiais das redes */
         .fa-instagram { color: #C13584; }
         .fa-linkedin { color: #0077B5; }
         .fa-facebook { color: #1877F2; }
@@ -133,7 +126,6 @@
             opacity: 0.7;
         }
 
-        /* Rodapé */
         footer {
             text-align: center;
             padding: 20px;
@@ -166,9 +158,19 @@
                         <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="card">
-                    <img src="" alt="Professor Júlio">
+                    <img src="gabi.png" alt="Professora Gabi">
+                    <h3>Prof. Gabriela</h3>
+                    <span>Sociologia</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="juju.jpg" alt="Professor Júlio">
                     <h3>Prof. Júlio</h3>
                     <span>Geografia</span>
                     <div class="social-icons">
@@ -186,7 +188,7 @@
             <div class="professores-grid">
                 
                 <div class="card">
-                    <img src="https://placehold.co/150x150/e67e22/white?text=Foto" alt="Professora Ana Cládia">
+                    <img src="clau.jpeg" alt="Professora Ana Cládia">
                     <h3>Prof. Ana Cládia Catão</h3>
                     <span>Português / Literatura</span>
                     <div class="social-icons">
@@ -197,7 +199,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="https://placehold.co/150x150/e67e22/white?text=Foto" alt="Professora Juliana">
+                    <img src="sapo.jpg" alt="Professora Juliana">
                     <h3>Prof. Juliana </h3>
                     <span>Inglês</span>
                     <div class="social-icons">
@@ -215,16 +217,25 @@
             <div class="professores-grid">
                 
                 <div class="card">
-                    <img src="https://placehold.co/150x150/2980b9/white?text=Foto" alt="Professora Nathália">
+                    <img src="iper.png" alt="Professora Nathália">
                     <h3>Prof. Nathália Barros</h3>
-                    <span>Matemática A</span>
+                    <span>Matemática</span>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-
+                <div class="card">
+                    <img src="randall.png" alt="Professora Sergio">
+                    <h3>Prof. Sergio</h3>
+                    <span>Matemática</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -233,7 +244,7 @@
             <div class="professores-grid">
                 
                 <div class="card">
-                    <img src="https://placehold.co/150x150/27ae60/white?text=Foto" alt="Professora Natália">
+                    <img src="nat.jpg" alt="Professora Natália">
                     <h3>Prof. Natália</h3>
                     <span>Biologia</span>
                     <div class="social-icons">
@@ -254,7 +265,18 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="card">
+                    <img src="maumau.webp" alt="Professor Mauro">
+                    <h3>Prof. Mauro Henrique</h3>
+                    <span>Química</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+         </div>
+
         </section>
 
     </main>
